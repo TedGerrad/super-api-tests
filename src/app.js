@@ -21,4 +21,16 @@ app.get('/course/:id', (req, res) => {
     res.json({ id: id, name: name });
 });
 
+module.exports = app; 
+
+app.post('/course', (req, res) => {
+    let name = req.body.name;
+    res.json({ id: '2', name: name });
+});
+
+app.post('/course', (req, res) => {
+    let name = req.body.name;
+    res.json({ id: '2', name: name });
+});
+
 module.exports = app;
